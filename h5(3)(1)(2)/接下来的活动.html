@@ -1,0 +1,397 @@
+<!--
+* @描述: 
+* @版本: 2.0
+* @Date: 2021-09-07 16:29:28
+* @最后编辑人: Ye
+ * @LastEditTime: 2021-09-09 17:44:45
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css">
+    <style>
+        .navchecked:hover .navadvice {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <main class="dark:bg-gray-800 bg-white relative  h-screen">
+        <header class="h-24 sm:h-32 flex items-center z-30 w-full">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+                    <svg aria-hidden="true" focusable="false" width="100" height="100" viewBox="0 0 512 309">
+                        <path d="M120.81 80.561h96.568v7.676h-87.716v57.767h82.486v7.675h-82.486v63.423h88.722v7.675H120.81V80.561zm105.22 0h10.26l45.467 63.423L328.23 80.56L391.441 0l-103.85 150.65l53.515 74.127h-10.663l-48.686-67.462l-48.888 67.462h-10.461l53.917-74.128l-50.296-70.088zm118.898 7.676V80.56h110.048v7.676h-50.699v136.54h-8.852V88.237h-50.497zM0 80.56h11.065l152.58 228.323l-63.053-84.107L9.254 91.468l-.402 133.31H0V80.56zm454.084 134.224c-1.809 0-3.165-1.4-3.165-3.212c0-1.81 1.356-3.212 3.165-3.212c1.83 0 3.165 1.401 3.165 3.212c0 1.811-1.335 3.212-3.165 3.212zm8.698-8.45h4.737c.064 2.565 1.937 4.29 4.693 4.29c3.079 0 4.823-1.854 4.823-5.325v-21.99h4.823v22.011c0 6.252-3.617 9.853-9.603 9.853c-5.62 0-9.473-3.493-9.473-8.84zm25.384-.28h4.78c.409 2.953 3.294 4.828 7.45 4.828c3.875 0 6.717-2.005 6.717-4.764c0-2.371-1.809-3.794-5.921-4.764l-4.005-.97c-5.62-1.316-8.181-4.032-8.181-8.602c0-5.54 4.521-9.227 11.303-9.227c6.308 0 10.916 3.686 11.196 8.925h-4.694c-.452-2.867-2.95-4.657-6.567-4.657c-3.81 0-6.35 1.833-6.35 4.635c0 2.22 1.635 3.493 5.683 4.441l3.423.841c6.373 1.488 9 4.075 9 8.753c0 5.95-4.607 9.68-11.97 9.68c-6.89 0-11.52-3.558-11.864-9.12z" fill="#000">
+                        </path>
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <nav class="bg-white font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center fixed lg:static inset-0 lg:p-0 top-24  sm:top-32 md:text-center">
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex text-indigo-500  justify-center	items-center	">
+                                Home
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="#" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    Analytics
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Engagement
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                Watch
+                            </a>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                Product
+                            </a>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center items-center		">
+                                Product
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block static lg:absolute  z-10  pt-3 transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="#" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    Analytics
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Engagement
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" @click="open = !open" class="py-2 px-6 flex hover:text-indigo-500    justify-center	">
+                                Carrer
+                            </a>
+                        </div>
+                    </nav>
+
+
+                    <button class="lg:hidden flex flex-col ml-4 dark:bg-gray-800">
+                        <span class="w-6 h-1 bg-red-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+
+                        <span class="w-6 h-1 bg-green-800 dark:bg-white mb-1">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section class="text-blueGray-700 ">
+            <div class="text-center max-w-xl mx-auto px-5 pt-24">
+                <h1 class="text-2xl font-medium tracking-wide text-center text-gray-800 md:text-4xl mb-5">
+                    接下来的活动
+                </h1>
+                <h3 class="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="text-blueGray-700 ">
+            <div class="container flex flex-col px-5 py-16 mx-auto lg:items-center">
+
+                <div class="w-full">
+                    <div class="mt-6 px-16">
+                        <div class="w-full px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-between">
+                                <span class="font-light text-gray-600">
+                                    Jun 1,
+                                    2020
+                                </span>
+                                <a href="#" class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
+                                    活动
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                    美国波士顿大学——博士后/访问学者项目
+                                </a>
+                                <p class="mt-2 text-gray-600">在北京大学学习和研究一年，期间每 2
+                                    个月集中一次，参与课程学习、研讨交流、企业参访、拓展活动等。定期提交论文进度报告并接受审核指导。</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">阅读 更多</a>
+                                <div>
+                                    <a href="#" class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80" alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+                                        <h1 class="font-bold text-gray-700 hover:underline">Alex John</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 px-16">
+                        <div class="w-full px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-between">
+                                <span class="font-light text-gray-600">
+                                    mar 4,
+                                    2019</span>
+                                <a href="#" class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
+                                    活动
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                    斯坦福大学博士后/访问学者
+                                </a>
+                                <p class="mt-2 text-gray-600">斯坦福大学博士后/访问学者项目，是面对中国大陆地区的高级专业人员、高级管理人士而设计的，其基于传统学位教育，通
+                                    过与名校名导师共同完成科研项目完善个人的学术经历。在传统的学术发展历程中，博士后项目是博士研究生转型成为高级研究
+                                    人员或者终身教授的必经阶段，同时也是高级管理人员和专业人士获得海外前沿研究经历、获得权威专业认可的必须经历。</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">
+                                    阅读 更多
+                                </a>
+                                <div>
+                                    <a href="#" class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=333&amp;q=80" alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+                                        <h1 class="font-bold text-gray-700 hover:underline">Jane Doe</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 px-16">
+                        <div class="w-full px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-between">
+                                <span class="font-light text-gray-600">Feb 14,
+                                    2019</span>
+                                <a href="#" class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
+                                    活动
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                    斯坦福大学博士后/访问学者
+                                </a>
+                                <p class="mt-2 text-gray-600">斯坦福大学博士后/访问学者项目，是面对中国大陆地区的高级专业人员、高级管理人士而设计的，其基于传统学位教育，通
+                                    过与名校名导师共同完成科研项目完善个人的学术经历。在传统的学术发展历程中，博士后项目是博士研究生转型成为高级研究
+                                    人员或者终身教授的必经阶段，同时也是高级管理人员和专业人士获得海外前沿研究经历、获得权威专业认可的必须经历。</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">
+                                    阅读 更多
+                                </a>
+                                <div><a href="#" class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1531251445707-1f000e1e87d0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=281&amp;q=80" alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+                                        <h1 class="font-bold text-gray-700 hover:underline">
+                                            Lisa Way
+                                        </h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 px-16">
+                        <div class="w-full px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-between">
+                                <span class="font-light text-gray-600">Dec 23,
+                                    2018</span>
+                                <a href="#" class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
+                                    活动
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                    斯坦福大学博士后/访问学者
+                                </a>
+                                <p class="mt-2 text-gray-600">斯坦福大学博士后/访问学者项目，是面对中国大陆地区的高级专业人员、高级管理人士而设计的，其基于传统学位教育，通
+                                    过与名校名导师共同完成科研项目完善个人的学术经历。在传统的学术发展历程中，博士后项目是博士研究生转型成为高级研究
+                                    人员或者终身教授的必经阶段，同时也是高级管理人员和专业人士获得海外前沿研究经历、获得权威专业认可的必须经历。</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">
+                                    阅读 更多
+                                </a>
+                                <div><a href="#" class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1500757810556-5d600d9b737d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=735&amp;q=80" alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+                                        <h1 class="font-bold text-gray-700 hover:underline">Steve Matt</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 px-16">
+                        <div class="w-full px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                            <div class="flex items-center justify-between">
+                                <span class="font-light text-gray-600">Mar 10,
+                                    2018</span>
+                                <a href="#" class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
+                                    活动
+                                </a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="#" class="text-2xl font-bold text-gray-700 hover:underline">
+                                    斯坦福大学博士后/访问学者
+                                </a>
+                                <p class="mt-2 text-gray-600">斯坦福大学博士后/访问学者项目，是面对中国大陆地区的高级专业人员、高级管理人士而设计的，其基于传统学位教育，通
+                                    过与名校名导师共同完成科研项目完善个人的学术经历。在传统的学术发展历程中，博士后项目是博士研究生转型成为高级研究
+                                    人员或者终身教授的必经阶段，同时也是高级管理人员和专业人士获得海外前沿研究经历、获得权威专业认可的必须经历。</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">
+                                    阅读 更多
+                                </a>
+                                <div><a href="#" class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=373&amp;q=80" alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+                                        <h1 class="font-bold text-gray-700 hover:underline">Khatab Wedaa</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- index.html -->
+
+        <footer class="bg-gray-100">
+            <div class="container mx-auto px-6 pt-10 pb-6">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Links</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Help</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Social</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Facebook</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Linkedin</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Company</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Official Blog</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">About Us</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>
