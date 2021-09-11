@@ -1,0 +1,444 @@
+<!--
+* @描述: 
+* @版本: 2.0
+* @Date: 2021-09-07 16:29:28
+* @最后编辑人: Ye
+ * @LastEditTime: 2021-09-12 00:53:38
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css">
+    <style>
+        .navchecked:hover .navadvice {
+            display: block;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+
+</head>
+
+<body>
+
+
+    <main class="dark:bg-gray-800 bg-white relative  h-screen pt-24 sm:pt-32">
+        <header class="h-24 sm:h-32 flex items-center z-40 w-full fixed bg-white  top-0	  inset-x-0	" x-data="dropdown()">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+                    <h1 class="">
+                        CAYF
+                    </h1>
+                </div>
+                <div class="flex items-center">
+                    <nav class="bg-white font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center fixed  lg:static inset-0 lg:p-0 top-24  sm:top-32 md:text-center z-50" x-show.transition="isOpen()">
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./index.html" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                Home
+                            </a>
+                        </div>
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center	items-center	">
+                                net Work
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./china.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    China
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./africa.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Africa
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center	items-center	">
+                                about
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./ourMission.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    our Mission
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./ourVision.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    our vision
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./about.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    meet our Team
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./WhatWeDo.html" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                What We Do
+                            </a>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center items-center		">
+                                Events
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block static lg:absolute  z-10  pt-3 transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./upcomingEvents.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    Upcoming Events
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./pastEvents.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Past Events
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./contact.html" class="py-2 px-6 flex hover:text-indigo-500    justify-center	">
+                                Contact
+                            </a>
+                        </div>
+                    </nav>
+
+
+                    <button class="lg:hidden flex flex-col mx-4 dark:bg-gray-800" x-on:click="open">
+                        <span class="w-6 h-1 bg-red-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+
+                        <span class="w-6 h-1 bg-green-800 dark:bg-white mb-1">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="text-blueGray-700 ">
+            <div class="container flex flex-col px-5 py-24 mx-auto lg:items-center">
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                    <h2 class="mb-4 text-xs font-semibold tracking-widest text-black uppercase title-font">Best humble people tonight, dusty step jump longmen.
+
+                    </h2>
+                    <h1 class="mb-6 text-2xl font-semibold tracking-tighter text-black sm:text-5xl title-font"> CAYF China Africa <br class="md:hidden"> Youth Federation </h1>
+                    <p class="mx-auto text-base font-medium leading-relaxed text-blueGray-700 lg:w-2/3">Don't be afraid of adventure when he was young. Even if failed, also have plenty of time to reverse.
+
+                    </p>
+                </div>
+                <div class="flex justify-left lg:justify-center ">
+                    <button class="flex items-center px-6 py-2 mt-auto mr-3 font-semibold text-blue-800 transition duration-500 ease-in-out transform bg-blue-100 rounded-lg hover:bg-blue-200 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+                        了解更多
+                    </button>
+                    <button class="flex items-center px-6 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+                        加入我们
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="container flex flex-col items-center justify-center px-10 pb-24 mx-auto rounded-lg lg:-mt-12 lg:px-40">
+                <img class="object-cover object-center w-full shadow-xl rounded-xl" alt="hero" src="https://dummyimage.com/720x600/F3F4F7/8693ac">
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- </div> -->
+        <section class="bg-gray-100">
+            <div class="container mx-auto px-6 py-20">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+                    展示
+                </h2>
+            </div>
+        </section>
+
+        <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+            <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="" width="384" height="512">
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                <blockquote>
+                    <p class="text-lg font-semibold">
+                        Faith is to the people, of wings to a bird, the flying wings of our faith is.
+
+
+                    </p>
+                </blockquote>
+                <figcaption class="font-medium">
+                    <div class="text-cyan-600">
+                        Only you self-confidence first, others will believe you.
+                    </div>
+                    <div class="text-gray-500">
+                        motto
+                    </div>
+                </figcaption>
+            </div>
+        </figure>
+
+        <div class="bg-white">
+            <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+                <h2 class="text-2xl font-extrabold text-gray-900">作品</h2>
+                <h2 class="sr-only">作品</h2>
+
+                <div class="mt-6  grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                    <a href="#" class="group">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-sm text-gray-700">
+                            Earthen Bottle
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                        </p>
+                    </a>
+
+                    <a href="#" class="group">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-sm text-gray-700">
+                            Nomad Tumbler
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                        </p>
+                    </a>
+
+                    <a href="#" class="group">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-sm text-gray-700">
+                            Focus Paper Refill
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                        </p>
+                    </a>
+
+                    <a href="#" class="group">
+                        <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                            <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="w-full h-full object-center object-cover group-hover:opacity-75">
+                        </div>
+                        <h3 class="mt-4 text-sm text-gray-700">
+                            Machined Mechanical Pencil
+                        </h3>
+                        <p class="mt-1 text-lg font-medium text-gray-900">
+                        </p>
+                    </a>
+
+                    <!-- More products... -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- index.html -->
+
+        <section class="bg-gray-100">
+            <div class="container mx-auto px-6 py-20">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+                    Testimonials
+                </h2>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3 px-2 mb-4">
+                        <div class="bg-white rounded shadow py-2">
+                            <p class="text-gray-800 text-base px-6 mb-5">If lost the tenacious will, difficulties will give you put on shackles.
+
+                            </p>
+                            <p class="text-gray-500 text-xs md:text-sm px-6">motto</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-2 mb-4">
+                        <div class="bg-white rounded shadow py-2">
+                            <p class="text-gray-800 text-base px-6 mb-5">As an Athlete, this is the perfect product for
+                                Don't want to lose a minute hand caught up with the same time, have to grasp the second hand to beat every moment!
+
+                            </p>
+                            <p class="text-gray-500 text-xs md:text-sm px-6">motto</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-2 mb-4">
+                        <div class="bg-white rounded shadow py-2">
+                            <p class="text-gray-800 text-base px-6 mb-5">Don't entertainment life, otherwise life will entertain you!
+
+                            </p>
+                            <p class="text-gray-500 text-xs md:text-sm px-6">motto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- index.html -->
+
+        <section style="background-color: #667eea">
+            <div class="container mx-auto px-6 text-center py-20">
+                <h2 class="mb-6 text-4xl font-bold text-center text-white">
+                    JOIN THE COMMUNITY
+
+                </h2>
+                <h3 class="my-4 text-2xl text-white">
+                    We believe that teamwork is a guarantee of success, and our focus on creative process makes us even better.
+
+                </h3>
+                <button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
+                    WE ARE LOOKING FOR YOU
+
+                </button>
+            </div>
+        </section>
+
+
+        <!-- index.html -->
+
+        <footer class="bg-gray-100">
+            <div class="container mx-auto px-6 pt-10 pb-6">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Links</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Help</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Social</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Facebook</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Linkedin</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Company</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Official
+                                    Blog</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">About Us</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+    <script>
+        function dropdown() {
+            var flag = window.matchMedia("(min-width: 1024px)").matches;
+
+            return {
+                show: flag,
+                open() {
+                    this.show = !this.show
+                },
+                close() {
+                    this.show = false
+                },
+                init(flag) {
+                    this.show = flag
+                },
+                isOpen() {
+                    return this.show === true
+                },
+            }
+        }
+        window.onresize = function() {
+            var flag = window.matchMedia("(min-width: 1024px)").matches;
+
+            dropdown().init(flag)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,686 @@
+<!--
+* @描述: 
+* @版本: 2.0
+* @Date: 2021-09-07 16:29:28
+* @最后编辑人: Ye
+ * @LastEditTime: 2021-09-12 01:21:35
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css">
+    <style>
+        .navchecked:hover .navadvice {
+            display: block;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+
+
+
+
+
+    <main class="dark:bg-gray-800 bg-white relative  h-screen pt-24 sm:pt-32">
+        <header class="h-24 sm:h-32 flex items-center z-40 w-full fixed bg-white  top-0	  inset-x-0	" x-data="dropdown()">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+                    <h1 class="">
+                        CAYF
+                    </h1>
+                </div>
+                <div class="flex items-center">
+                    <nav class="bg-white font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center fixed  lg:static inset-0 lg:p-0 top-24  sm:top-32 md:text-center z-50" x-show.transition="isOpen()">
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./index.html" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                Home
+                            </a>
+                        </div>
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center	items-center	">
+                                net Work
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./china.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    China
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./africa.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Africa
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center	items-center	">
+                                about
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./ourMission.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    our Mission
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./ourVision.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    our vision
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./about.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    meet our Team
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./WhatWeDo.html" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                What We Do
+                            </a>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center items-center		">
+                                Events
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block static lg:absolute  z-10  pt-3 transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./upcomingEvents.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    Upcoming Events
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./pastEvents.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Past Events
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./contact.html" class="py-2 px-6 flex hover:text-indigo-500    justify-center	">
+                                Contact
+                            </a>
+                        </div>
+                    </nav>
+
+
+                    <button class="lg:hidden flex flex-col mx-4 dark:bg-gray-800" x-on:click="open">
+                        <span class="w-6 h-1 bg-red-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+
+                        <span class="w-6 h-1 bg-green-800 dark:bg-white mb-1">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <section class="text-blueGray-700 ">
+            <div class="container flex flex-col px-5 py-24 mx-auto lg:items-center">
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                    <h3 class="mb-6 text-2xl font-semibold tracking-tighter text-black sm:text-3xl title-font">
+                        Our mission
+
+
+                    </h3>
+                    <p class="mx-auto text-base font-medium leading-relaxed text-blueGray-700 lg:w-2/3">
+                        Our mission is to mobilize African expatriates, reformers and their allies in China, and equip them with resources to contribute to a prosperous and dignified Africa.
+                    </p>
+
+                </div>
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                    <h3 class="mb-6 text-2xl font-semibold tracking-tighter text-black sm:text-3xl title-font">
+                        Our vision
+                    </h3>
+                    <p class="mx-auto text-base font-medium leading-relaxed text-blueGray-700 lg:w-2/3">
+                        Become the largest Asian African network platform to promote international cooperation, promote knowledge transfer and encourage overseas Chinese to participate in sustainable development in Africa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="bg-white">
+            <div class="container mx-auto px-6 py-6">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+                    认识我们的团队
+                </h2>
+            </div>
+        </section> -->
+        <section class="text-blueGray-700 ">
+            <div class="text-center max-w-xl mx-auto px-5 pt-24">
+                <h1 class="text-2xl font-medium tracking-wide text-center text-gray-800 md:text-4xl mb-5">
+                    Our team
+                </h1>
+                <h3 class="text-xl mb-5 font-light">Every day, we dedicate to make things better, keep moving forward and never stop. We believe that teamwork is a guarantee of success, and our focus on creative process makes us even better.
+                </h3>
+                <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>
+            </div>
+
+        </section>
+        <div class="bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto py-16 sm:py-16 lg:py-16 lg:max-w-none">
+                    <div class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Pele Voncujovi
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is passionate about environmental issues pertaining to agriculture and hopes to use his background and network to help bridge opportunities in agricultural technologies between Africa and Asia.
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">As a co-founder, he hopes that Jaspora can serve as a networking platform strengthening the community network of the African Diaspora in Asia to promote diasporan engagement with the African continent.
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Oulimata Gueye
+
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Oulimata (Ouli) hails from Senegal and graduated from Tokyo University with a masters in international cooperation. She lived in Japan for ten years and recently moved back to Senegal where she spearheads Ashinaga’s francophone scholarship recruitment covering over 20 African countries.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Ouli previously worked as an infrastructural consultant in Tokyo and a professional interpreter in English, French, and Japanese. She is passionate about reading, meeting new people, and dancing.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">A pan-African at heart, she hopes that Jaspora can contribute to human capital development by connecting the African Diaspora with each other and with their allies for a “win-win” scenario.
+
+
+
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Sena Voncujovi
+
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Sena is currently a Yenching Scholar at Peking University (PKU) and the Chief Editor of the PKU Africa Think Tank in China. He graduated from Middlebury College in the U.S where he studied International Politics & Economics and African Studies as a Davis United World College Scholar.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Post-graduation, he worked at Ashinaga Foundation in Tokyo, providing entrepreneurship, leadership, and career development training to students from 49 African countries. He has also previously served as an adviser to the Ghanaian government for TICAD 7 and aspires to economically and culturally bridge Asia and Africa.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is passionate about education, Asia-Africa relations, and preserving indigenous African wisdom. He hopes that Jaspora will serve as a platform to accelerate diasporan contributions to African development. He speaks Japanese, English, French, and currently learning Mandarin.
+
+
+
+                            </p>
+                        </div>
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Geoffrey Kayiira
+
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Geoffrey Kayiira hails from Uganda and holds a B.S. in Computer Science from Doshisha University in Kyoto, Japan. He also spent a year as an exchange student at Western Michigan University in Michigan USA.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is currently based in Tokyo and leads the anglophone recruitment process for the Ashinaga Africa Initiative (AAI) program, a scholarship program providing university scholarships to orphaned students from 49 Sub-Saharan African countries.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is passionate about computers, IT, innovation, and entrepreneurship and hopes to use his tech expertise to help grow, engage and leverage the Jaspora network through digital innovation.
+
+
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Pele Voncujovi
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Pele Voncujovi
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6" x-show="tab === 'bar'">
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1588773657335-FK4CTEP7Z5HFOA5VP4BL/_K1A5108+%281%29.jpg?format=750w" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Pele Voncujovi
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is passionate about environmental issues pertaining to agriculture and hopes to use his background and network to help bridge opportunities in agricultural technologies between Africa and Asia.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">As a co-founder, he hopes that Jaspora can serve as a networking platform strengthening the community network of the African Diaspora in Asia to promote diasporan engagement with the African continent.
+
+
+
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Oulimata Gueye
+
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Oulimata (Ouli) hails from Senegal and graduated from Tokyo University with a masters in international cooperation. She lived in Japan for ten years and recently moved back to Senegal where she spearheads Ashinaga’s francophone scholarship recruitment covering over 20 African countries.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Ouli previously worked as an infrastructural consultant in Tokyo and a professional interpreter in English, French, and Japanese. She is passionate about reading, meeting new people, and dancing.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">A pan-African at heart, she hopes that Jaspora can contribute to human capital development by connecting the African Diaspora with each other and with their allies for a “win-win” scenario.
+
+
+
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Sena Voncujovi
+
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Sena is currently a Yenching Scholar at Peking University (PKU) and the Chief Editor of the PKU Africa Think Tank in China. He graduated from Middlebury College in the U.S where he studied International Politics & Economics and African Studies as a Davis United World College Scholar.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Post-graduation, he worked at Ashinaga Foundation in Tokyo, providing entrepreneurship, leadership, and career development training to students from 49 African countries. He has also previously served as an adviser to the Ghanaian government for TICAD 7 and aspires to economically and culturally bridge Asia and Africa.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is passionate about education, Asia-Africa relations, and preserving indigenous African wisdom. He hopes that Jaspora will serve as a platform to accelerate diasporan contributions to African development. He speaks Japanese, English, French, and currently learning Mandarin.
+
+
+
+                            </p>
+                        </div>
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Geoffrey Kayiira
+
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Geoffrey Kayiira hails from Uganda and holds a B.S. in Computer Science from Doshisha University in Kyoto, Japan. He also spent a year as an exchange student at Western Michigan University in Michigan USA.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is currently based in Tokyo and leads the anglophone recruitment process for the Ashinaga Africa Initiative (AAI) program, a scholarship program providing university scholarships to orphaned students from 49 Sub-Saharan African countries.
+
+
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">He is passionate about computers, IT, innovation, and entrepreneurship and hopes to use his tech expertise to help grow, engage and leverage the Jaspora network through digital innovation.
+
+
+                            </p>
+                        </div>
+
+                        <div class="group relative mb-4">
+                            <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1">
+                                <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="w-full h-full object-center object-cover">
+                            </div>
+                            <h3 class="mt-6 text-sm text-gray-500 text-center">
+                                <a href="#">
+                                    <span class="absolute inset-0"></span>
+                                    Co founder
+                                </a>
+                            </h3>
+                            <h2 class="text-2xl font-bold text-center text-gray-800 my-4">
+                                Pele Voncujovi
+                            </h2>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                            <p class="text-base  text-gray-900 capitalize mb-6">Pele is a Ghanaian-Japanese social
+                                entrepreneur educated in Ghana, Costa Rica and the USA. He holds a BA in Economics from
+                                Middlebury College in Vermont and currently works as a Market Analyst at Rakuten Mobile
+                                in
+                                Tokyo.
+
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- index.html -->
+
+        <footer class="bg-gray-100">
+            <div class="container mx-auto px-6 pt-10 pb-6">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Links</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Help</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Social</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Facebook</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Linkedin</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Company</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Official
+                                    Blog</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">About Us</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+
+</body>
+<script>
+    function dropdown() {
+        var flag = window.matchMedia("(min-width: 1024px)").matches;
+
+        return {
+            show: flag,
+            open() {
+                this.show = !this.show
+            },
+            close() {
+                this.show = false
+            },
+            init(flag) {
+                this.show = flag
+            },
+            isOpen() {
+                return this.show === true
+            },
+        }
+    }
+    window.onresize = function() {
+        var flag = window.matchMedia("(min-width: 1024px)").matches;
+
+        dropdown().init(flag)
+    }
+</script>
+
+</html>

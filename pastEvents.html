@@ -1,0 +1,390 @@
+<!--
+* @描述: 
+* @版本: 2.0
+* @Date: 2021-09-07 16:29:28
+* @最后编辑人: Ye
+ * @LastEditTime: 2021-09-12 01:23:15
+-->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css">
+    <style>
+        .navchecked:hover .navadvice {
+            display: block;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+
+
+    <main class="dark:bg-gray-800 bg-white relative  h-screen pt-24 sm:pt-32">
+        <header class="h-24 sm:h-32 flex items-center z-40 w-full fixed bg-white  top-0	  inset-x-0	" x-data="dropdown()">
+            <div class="container mx-auto px-6 flex items-center justify-between">
+                <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+                    <h1 class="">
+                        CAYF
+                    </h1>
+                </div>
+                <div class="flex items-center">
+                    <nav class="bg-white font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center fixed  lg:static inset-0 lg:p-0 top-24  sm:top-32 md:text-center z-50" x-show.transition="isOpen()">
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./index.html" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                Home
+                            </a>
+                        </div>
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center	items-center	">
+                                net Work
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./china.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    China
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./africa.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Africa
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center	items-center	">
+                                about
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block  static lg:absolute  z-10 pt-3  transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./ourMission.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    our Mission
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./ourVision.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    our vision
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./about.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    meet our Team
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./WhatWeDo.html" class="py-2 px-6 flex hover:text-indigo-500 justify-center	">
+                                What We Do
+                            </a>
+                        </div>
+
+                        <div class="navchecked relative border-b-2 border-indigo-500 border-opacity-0	hover:border-opacity-100">
+
+                            <a href="#" class="py-2 px-6 flex hover:text-indigo-500  justify-center items-center		">
+                                Events
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <div class="navadvice hidden hover:block static lg:absolute  z-10  pt-3 transform lg:px-2  px-0 lg:w-screen lg:max-w-sm sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-6 bg-white lg:px-5 px-0 py-6 sm:gap-8 sm:p-8">
+                                        <a href="./upcomingEvents.html" class="-m-3 p-3 flex lg:items-start items-center  rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900 text-center ">
+                                                    Upcoming Events
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="./pastEvents.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 justify-center">
+                                            <div class="">
+                                                <p class="text-base font-medium text-gray-900">
+                                                    Past Events
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative border-b-2 hover:border-indigo-500 border-opacity-0	hover:border-opacity-100">
+                            <a href="./contact.html" class="py-2 px-6 flex hover:text-indigo-500    justify-center	">
+                                Contact
+                            </a>
+                        </div>
+                    </nav>
+
+
+                    <button class="lg:hidden flex flex-col mx-4 dark:bg-gray-800" x-on:click="open">
+                        <span class="w-6 h-1 bg-red-800 dark:bg-white mb-1">
+                        </span>
+                        <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                        </span>
+
+                        <span class="w-6 h-1 bg-green-800 dark:bg-white mb-1">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <section class="text-blueGray-700 ">
+            <div class="text-center max-w-xl mx-auto px-5 pt-24">
+                <h1 class="text-2xl font-medium tracking-wide text-center text-gray-800 md:text-4xl mb-5">
+                    Past Events
+                </h1>
+                <h3 class="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="bg-gray-100 min-h-screen py-32 px-10 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-10 xl-grid-cols-4 gap-y-10 gap-x-6 ">
+
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1616257609940-E5F69IIQ8G1JM33JWDYB/DSC06009.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            Kokujin Experiences: The Evolution of Blackness in Japan</h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">To celebrate Black History Month in Japan, Jaspora
+                            partnered with CIC Tokyo, Japans largest innovation center, to organize our second event of
+                            the year, "Kokujin Experiences: The Evolution of Blackness in Japan" , a reference to the
+                            Japanese word for black people.
+
+                            Prominent black activists, scholars, public figures, and everyday students reflected on
+                            challenges and opportunities black people face in Japan, the 2020 BLM protests, biracial
+                            identity, racism and much more within the Japanese context. We had an extremely successful
+                            event with over 250 participants from over 20 countries joining in on Clubhouse, Zoom and
+                            in-person at CIC Tokyo. Our fantastic panelists and audience contributors shared many
+                            insightful experiences as our audience engaged in deep, thought provoking discussions on the
+                            black experience in Japan.
+
+                            We were also very fortunate to have the event featured on NHK World Japan.</p> -->
+                    </div>
+                </div>
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1588752351104-4DD917IRQC52MDZ71X0Y/_K1A4978.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            Afro-Asian Fashion Fusion
+                        </h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">Afro-Asian Fashion Fusion explored the opportunities and challenges of cross-continental fashion collaboration between Africa, Asia and the World. The discussion covered topics ranging from sustainable fashion and quality control to politics of clothing and the importance of patronizing traditional arts.
+                        </p> -->
+                    </div>
+                </div>
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1611074278754-MHOVGL7XGZ9SOU9C3VWT/Photo+28-11-2019%2C+8+07+41+PM.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            The Power of Connectworking
+                        </h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium quis.</p> -->
+                    </div>
+                </div>
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1588756149350-YCWZ7GSY5LIALK4YHVKB/82789523_461409697864915_4226239710365745152_n.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            Missteps and Next Steps
+                        </h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium quis.</p> -->
+                    </div>
+                </div>
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1611074066315-TABN0MD3WSMMPDW7UZAG/DSC_3108+%281%29.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            Afro Xperience Japan
+                        </h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium quis.</p> -->
+                    </div>
+                </div>
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1611636781581-0ULX3X5ZN7MHOXXUA6RL/84359394_181102319908719_5144189025996767232_o.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            Climate Change in Africa
+                        </h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium quis.</p> -->
+                    </div>
+                </div>
+
+                <div class="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5eb03884212cff4d93f043c7/1611636837286-QBPBF49U7ILLAIA8ZGCP/70423356_130204311665187_6383911935619891200_o.jpg?format=750w" alt="" class="rounded-t-lg w-full h-80">
+                    <div class="p-6">
+                        <h1 class="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
+                            Climate Change in Africa
+                        </h1>
+                        <!-- <p class="text-gray-700 my-2 hover-text-900 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium quis.</p> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- index.html -->
+
+        <footer class="bg-gray-100">
+            <div class="container mx-auto px-6 pt-10 pb-6">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Links</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Help</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Legal</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Social</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Facebook</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Linkedin</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <h5 class="uppercase mb-6 font-bold">Company</h5>
+                        <ul class="mb-4">
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Official
+                                    Blog</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">About Us</a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+</body>
+<script>
+     function dropdown() {
+            var flag = window.matchMedia("(min-width: 1024px)").matches;
+
+            return {
+                show: flag,
+                open() {
+                    this.show = !this.show
+                },
+                close() {
+                    this.show = false
+                },
+                init(flag) {
+                    this.show = flag
+                },
+                isOpen() {
+                    return this.show === true
+                },
+            }
+        }
+        window.onresize = function() {
+            var flag = window.matchMedia("(min-width: 1024px)").matches;
+
+            dropdown().init(flag)
+        }
+</script>
+
+</html>
